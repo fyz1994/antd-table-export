@@ -1,6 +1,6 @@
 {
   "name": "antd-table-export",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "antd-table 的前端导出",
   "main": "lib/index.js",
   "scripts": {
