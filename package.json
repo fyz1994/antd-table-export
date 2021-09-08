@@ -2,7 +2,7 @@
   "name": "antd-table-export",
   "version": "0.0.1",
   "description": "antd-table 的前端导出",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "npm link && cd test && npm i && npm link antd-table-export && npm start",
     "build": "rollup -c",
