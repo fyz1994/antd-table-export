@@ -45,5 +45,5 @@ const exportInstance = new tableExport(datasource, columns);
 > 2. 文件类型，目前支持 xlsx、xls 两种类型，如果不传此参数，默认的文件类型是 xlsx
 
 ```javascript
-exportInstance.download(tableName);
+exportInstance.download(fileName);
 ```
