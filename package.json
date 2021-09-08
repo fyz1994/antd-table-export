@@ -1,6 +1,6 @@
 {
   "name": "antd-table-export",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "antd-table 的前端导出",
   "main": "lib/index.js",
   "scripts": {
@@ -27,6 +27,7 @@
     "rollup-plugin-typescript2": "^0.30.0",
     "typescript": "^4.4.2"
   },
+  "types": "lib/Export.class.d.ts",
   "files": [
     "lib"
   ]

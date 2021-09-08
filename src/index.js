@@ -1,3 +1,3 @@
-import Export from "./utils/Export.class.ts";
+import Export from "./Export.class.ts";
 
 export default Export;

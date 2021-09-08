@@ -13,15 +13,15 @@ interface DataSourceItem {
  * 通过 Table 相关数据：dataSource, columns 来下载表格
  */
 export default class Export {
-  dataJson: object[] = [];
-  headers: string[] = [];
+  private dataJson: object[] = [];
+  private headers: string[] = [];
 
   constructor(dataSource: DataSourceItem[], columns: ColumnItem[]) {
     this.dataJson = this.genDataJson(dataSource, columns);
     this.headers = this.genHeaders(columns);
   }
 
-  genDataJson(dataSource: DataSourceItem[], columns: ColumnItem[]) {
+  private genDataJson(dataSource: DataSourceItem[], columns: ColumnItem[]) {
     if (!dataSource) {
       return [];
     }
@@ -35,11 +35,11 @@ export default class Export {
     });
   }
 
-  genHeaders(columns: ColumnItem[]) {
+  private genHeaders(columns: ColumnItem[]) {
     return columns.map((column) => column.title);
   }
 
-  download(fileName: string, fileType: string = "xlsx") {
+  public download(fileName: string, fileType: string = "xlsx") {
     switch (fileType) {
       case "xlsx":
       case "xls":
@@ -49,7 +49,7 @@ export default class Export {
     }
   }
 
-  downloadXLSX(fileName: string) {
+  private downloadXLSX(fileName: string) {
     const wb = XLSX.utils.book_new();
     const ws = XLSX.utils.json_to_sheet(this.dataJson, {
       header: this.headers,
