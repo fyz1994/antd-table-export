@@ -1,0 +1,33 @@
+{
+  "name": "antd-table-export",
+  "version": "0.0.1",
+  "description": "antd-table 的前端导出",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm link && cd test && npm i && npm link antd-table-export && npm start",
+    "build": "rollup -c",
+    "prepare": "npm run build",
+    "version": "git add --all",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "antd",
+    "antd-table",
+    "table",
+    "export",
+    "table-export"
+  ],
+  "author": "yizhen.fan",
+  "license": "ISC",
+  "dependencies": {
+    "xlsx": "^0.17.1"
+  },
+  "devDependencies": {
+    "rollup": "^2.56.3",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.4.2"
+  },
+  "files": [
+    "lib"
+  ]
+}
