@@ -15,5 +15,8 @@
     "noEmit": true,
     "declaration": true,
     "declarationDir": "."
-  }
+  },
+  "include": ["src"],
+  "exclude": ["."],
+  "files": ["src/Export.class.ts"]
 }

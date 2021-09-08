@@ -6,6 +6,9 @@ export default {
     file: "lib/index.js",
     format: "umd",
     name: "TableExport",
+    globals: {
+      xlsx: "XLSX",
+    },
   },
   plugins: [
     typescript({
@@ -13,4 +16,5 @@ export default {
       typescript: require("typescript"),
     }),
   ],
+  external: ["xlsx"],
 };
